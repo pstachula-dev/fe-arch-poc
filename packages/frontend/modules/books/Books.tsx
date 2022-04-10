@@ -3,11 +3,8 @@ import { memo, useState } from "react";
 import { useBookStore } from "../../utils/stores/books-store"
 
 const BookChild = ({ books }: { books?: Book[]}) => {
-    console.log('render child', books);
     return <div>Book child</div>
 };
-
-const BookMemo = memo(BookChild);
 
 export const Books = () => {
     const [_state, setState] = useState(0);
@@ -24,6 +21,6 @@ export const Books = () => {
             {books?.map(book => <li key={book.name}>{book.name}</li>)}
         </ul>
         <button onClick={addNewBook}>Add new Book</button>
-        <BookMemo books={books} />
+        <BookChild books={books} />
     </div>
 }
