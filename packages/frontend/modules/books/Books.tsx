@@ -1,4 +1,4 @@
-import { Book } from "@fe/types/book";
+import { Book } from "../../utils/types/books.types";
 import { memo, useState } from "react";
 import { useBookStore } from "../../utils/stores/books-store"
 
@@ -10,7 +10,7 @@ const BookChild = ({ books }: { books?: Book[]}) => {
 const BookMemo = memo(BookChild);
 
 export const Books = () => {
-    const [state, setState] = useState(0);
+    const [_state, setState] = useState(0);
     const { books, postBook } = useBookStore(); 
 
     const addNewBook = () => {

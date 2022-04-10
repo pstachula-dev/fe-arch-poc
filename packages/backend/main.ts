@@ -1,13 +1,13 @@
 import express from 'express';
 import cors from 'cors'
-import { Book } from '@fe/types/book'
+import { BookDto } from '@fe/types/book'
 
-const book: Book = {
+const book: BookDto = {
   name: 'Harry Potter',
   pages: 300,
 }
 
-const book2: Book = {
+const book2: BookDto = {
   name: 'Lord of the rings',
   pages: 200,
 }
