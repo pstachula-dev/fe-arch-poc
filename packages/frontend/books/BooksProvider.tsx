@@ -6,7 +6,7 @@ export const BooksProvider = ({ children }: { children: ReactNode }) => {
     
     useEffect(() => {
         getPageData();
-    }, []);
+    }, [getPageData]);
     
     return <>{children}</>
 }
