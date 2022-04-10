@@ -12,6 +12,7 @@
     "dependencies": {
         "express": "^4.17.3",
         "ts-node": "^10.7.0",
+        "cors": "2.8.5",
         "@fe/types": "*"
     },
     "devDependencies": {

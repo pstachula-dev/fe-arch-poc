@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors'
 import { Book } from '@fe/types/book'
 
 const book: Book = {
@@ -9,10 +10,15 @@ const book: Book = {
 const books = [book, book];
 
 const app = express()
-const port = 3000
+app.use(cors())
+const port = 3030
 
-app.get('/book/:id', (req, res) => {
+app.get('/books/:id', (req, res) => {
   res.json(books[req.params.id]);
+})
+
+app.get('/books', (req, res) => {
+  res.json(books);
 })
 
 app.listen(port, () => {

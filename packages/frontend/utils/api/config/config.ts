@@ -1,3 +1,5 @@
+const host = "http://localhost:3030"
+
 export const routesConfig = {
-    book: '/book'
+    books: `${host}/books`,
 }

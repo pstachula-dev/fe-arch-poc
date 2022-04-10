@@ -1,14 +1,14 @@
 {
     "name": "fe-arch",
     "workspaces": [
-      "packages/*"
+        "packages/*"
     ],
     "private": true,
     "scripts": {
-      "be:dev": "npm run dev -w=@fe/backend",
-      "fe:dev": "npm run dev -w=@fe/frontend"
+        "be:dev": "npm run dev -w=@fe/backend",
+        "fe:dev": "npm run dev -w=@fe/frontend"
     },
     "devDependencies": {
-      "typescript": "4.6.3"
+        "typescript": "4.6.3"
     }
-  }
+}

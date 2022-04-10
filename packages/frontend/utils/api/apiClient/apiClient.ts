@@ -1,5 +1,3 @@
-import axios, { AxiosRequestConfig } from "axios";
+import axios, { AxiosResponse } from "axios";
 
-export const apiGet = <DataT>(url: string) => (param: string, config?: AxiosRequestConfig<DataT>): Promise<DataT> => axios.get(`${url}/${param}`, config);
-
-export const apiGet2 = <DataT>(url: string) => (param: string): Promise<DataT> => axios.get(`${url}/${param}`);
+export const apiGet = <DataT>(url: string) => (param?: string): Promise<AxiosResponse<DataT>> => axios.get(`${url}/${param}`);
