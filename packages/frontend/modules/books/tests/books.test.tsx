@@ -1,11 +1,9 @@
 import { render, screen } from '@testing-library/react'
-import { useBookStore } from '../../../utils/stores/books-store';
+import { setupBooksStore } from './book-store.mock';
 import { Books } from '../Books';
 
 const setup = () => {
-    useBookStore.setState({
-        books: [{ name: "Harry Potter", pages: 1 }]
-    })
+    setupBooksStore();
     render(<Books />);
 }
 
