@@ -1,4 +1,4 @@
-export interface Book {
-    name: string;
+export interface BookDto {
+    newname: string;
     pages: number;
 }

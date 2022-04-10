@@ -1,5 +1,5 @@
-import { Book } from "@fe/types/book";
 import { memo, useState } from "react";
+import { Book } from '../../utils/api/types/books.types';
 import { useBookStore } from "../../utils/stores/books-store"
 
 const BookChild = ({ books }: { books?: Book[]}) => {

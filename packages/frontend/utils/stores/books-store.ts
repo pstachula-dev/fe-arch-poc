@@ -1,5 +1,5 @@
 import create from 'zustand';
-import { Book } from '@fe/types/book'
+import { Book } from '../api/types/books.types';
 import  { getAllBook, postBook } from '../api/models/books'
 
 interface BooksState {
