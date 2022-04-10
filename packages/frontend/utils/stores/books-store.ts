@@ -3,15 +3,15 @@ import { Book } from '@fe/types/book'
 import  { getAllBook, postBook } from '../api/models/books'
 
 interface BooksState {
-	book?: Book | null;
-    books: Book[] | null;
+	book?: Book;
+    books?: Book[];
     getPageData: () => void;
     postBook: (data: Book) => void;
 };
 
 export const useBookStore = create<BooksState>((set) => ({
-	book: null,
-    books: null,
+	book: undefined,
+    books: undefined,
     postBook: async (data) => {
         await postBook(data);
     },
