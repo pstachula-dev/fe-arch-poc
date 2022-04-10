@@ -4,4 +4,4 @@ import { routesConfig } from "../config/config";
 
 export const getAllBook = apiGet<Book[]>(routesConfig.books);
 
-export const postBook = apiPost<Book>(routesConfig.books);
+export const postBook = apiPost<Book, Book>(routesConfig.books);

@@ -6,16 +6,17 @@ interface BooksState {
 	book?: Book | null;
     books: Book[] | null;
     getPageData: () => void;
-    postBook: () => void;
+    postBook: (data: Book) => void;
 };
 
 export const useBookStore = create<BooksState>((set) => ({
 	book: null,
     books: null,
-    postBook: async () => {
-        await postBook({ name: 'New Book', pages: 123 });
+    postBook: async (data) => {
+        await postBook(data);
     },
     getPageData: async () => {
+        // we can get more requests in Promise.all for the page
         const { data } = await getAllBook();
         set({ books: data });
     }

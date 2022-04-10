@@ -1,8 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { BooksProvider } from '../books/BooksProvider'
-import { Books } from '../books/Books'
 
 const Home: NextPage = () => {
   return (
@@ -14,9 +12,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <BooksProvider>
-          <Books />
-        </BooksProvider>
+        hello
       </main>
 
     </div>

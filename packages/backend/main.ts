@@ -7,7 +7,12 @@ const book: Book = {
   pages: 300,
 }
 
-const books = [book, book];
+const book2: Book = {
+  name: 'Lord of the rings',
+  pages: 200,
+}
+
+const books = [book, book2];
 
 const app = express()
 app.use(cors())
