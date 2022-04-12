@@ -1,3 +1,4 @@
-import { BookDto } from '@fe/types/book';
-
-export interface Book extends BookDto {}
+export type Book = {
+    name: string;
+    pages: number;
+};

@@ -1,6 +1,6 @@
 import create from 'zustand';
 import { Book } from '../../../services/types/books.types'
-import  { getAllBook, postBook } from '../../../services/api/models/books'
+import  { postBook } from '../../../services/api/models/books'
 
 interface BooksState {
 	book?: Book;
@@ -13,7 +13,7 @@ export const useBookStore = create<BooksState>((set) => ({
 	book: undefined,
     books: undefined,
     postBook: async (data) => {
-        await postBook(data);
+        // await postBook(data);
     },
     setBooks: (books) => {
         set({ books });
