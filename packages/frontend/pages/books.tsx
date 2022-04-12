@@ -1,5 +1,5 @@
-import { BooksProvider } from '../modules/books/BooksProvider'
-import { Books } from '../modules/books/Books'
+import { BooksProvider } from '../modules/books/components/BooksProvider'
+import { Books } from '../modules/books/components/Books'
 
 function BooksPage() {
     return <div>

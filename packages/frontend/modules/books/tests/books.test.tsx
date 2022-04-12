@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { setupBooksStore } from './book-store.mock';
-import { Books } from '../Books';
+import { Books } from '../components/Books';
 
 const setup = () => {
     setupBooksStore();

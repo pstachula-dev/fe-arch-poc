@@ -1,6 +1,6 @@
 import create from 'zustand';
-import { Book } from '../types/books.types'
-import  { getAllBook, postBook } from '../api/models/books'
+import { Book } from '../../../services/types/books.types'
+import  { getAllBook, postBook } from '../../../services/api/models/books'
 
 interface BooksState {
 	book?: Book;

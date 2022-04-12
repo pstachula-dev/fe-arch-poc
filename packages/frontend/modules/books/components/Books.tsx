@@ -1,4 +1,4 @@
-import { useBookStore } from "../../services/stores/books-store"
+import { useBookStore } from "../stores/books-store"
 
 export const Books = () => {
     const { books, postBook } = useBookStore(); 
