@@ -5,8 +5,8 @@ import  { getAllBook, postBook } from '../../../services/api/models/books'
 interface BooksState {
 	book?: Book;
     books?: Book[];
-    getPageData: () => void;
     postBook: (data: Book) => void;
+    setBooks: (books?: Book[]) => void;
 };
 
 export const useBookStore = create<BooksState>((set) => ({
@@ -15,9 +15,7 @@ export const useBookStore = create<BooksState>((set) => ({
     postBook: async (data) => {
         await postBook(data);
     },
-    getPageData: async () => {
-        // we can get more requests in Promise.all for the page
-        const { data } = await getAllBook();
-        set({ books: data });
-    }
+    setBooks: (books) => {
+        set({ books });
+    },
 }));
