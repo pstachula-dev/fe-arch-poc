@@ -16,5 +16,12 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["**/node_modules", "**/.*/", "**/*.d.ts", "**/coverage"]
+  "exclude": [
+    "**/node_modules",
+    "**/.*/",
+    "**/*.d.ts",
+    "**/dist",
+    "**/*.build",
+    "**/coverage"
+  ]
 }

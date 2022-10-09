@@ -1,21 +1,16 @@
 import create from 'zustand';
-import { Book } from '../../../services/types/books.types'
-import  { postBook } from '../../../services/api/models/books'
+import { BookEntity } from '../../../services/types/books.types';
 
 interface BooksState {
-	book?: Book;
-    books?: Book[];
-    postBook: (data: Book) => void;
-    setBooks: (books?: Book[]) => void;
-};
+  book?: BookEntity;
+  books?: BookEntity[];
+  setBooks: (books?: BookEntity[]) => void;
+}
 
 export const useBookStore = create<BooksState>((set) => ({
-	book: undefined,
-    books: undefined,
-    postBook: async (data) => {
-        // await postBook(data);
-    },
-    setBooks: (books) => {
-        set({ books });
-    },
+  book: undefined,
+  books: undefined,
+  setBooks: (books?: BookEntity[]): void => {
+    set({ books });
+  },
 }));

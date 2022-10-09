@@ -1,17 +1,17 @@
 {
   "extends": "../../common-configs/tsconfig.json",
   "compilerOptions": {
-      "module": "esnext",
-      "lib": ["dom", "dom.iterable", "esnext"],
-      "baseUrl": "./src",
-      "jsx": "preserve",
-      "noEmit": true,
-      "paths": {
-          "@services/*": ["src/services/*"],
-          "@utils/*": ["utils/*"],
-          "@modules/*": ["src/modules/*"],
-          "@atoms/*": ["atoms/*"],
-      }
+    "module": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": "./src",
+    "jsx": "preserve",
+    "noEmit": true,
+    "paths": {
+      "@services/*": ["src/services/*"],
+      "@utils/*": ["utils/*"],
+      "@modules/*": ["src/modules/*"],
+      "@atoms/*": ["atoms/*"],
+    }
   },
-  "include": ["src", "**/*.js"],
+  "include": ["src", "**/*", ".eslintrc.js"],
 }

@@ -44,7 +44,7 @@
     "husky": "~7.0.4"
   },
   "lint-staged": {
-    "*.{ts,tsx,css}": [
+    "*.{ts,tsx,css,json}": [
       "pnpm lint"
     ]
   },
