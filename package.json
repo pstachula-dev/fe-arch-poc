@@ -10,7 +10,9 @@
   "scripts": {
     "prepare": "husky install",
     "be:dev": "npm run dev -w=@app/backend",
-    "fe:dev": "npm run dev -w=@app/frontend"
+    "fe:dev": "npm run dev -w=@app/frontend",
+    "fe:build": "npm run build -w=@app/frontend",
+    "fe:lint": "npm run lint -w=@app/frontend"
   },
   "dependencies": {
     "@commitlint/cli": "~16.2.3",
