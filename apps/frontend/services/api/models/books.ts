@@ -1,4 +1,4 @@
-import { BookDto } from '@fe/types/book'
+import { BookDto } from '@app/types/book'
 import { AxiosResponse } from 'axios';
 import { Book } from '../../types/books.types';
 import { apiGet, apiPost } from "../apiClient/apiClient";

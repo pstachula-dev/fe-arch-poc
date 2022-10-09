@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors'
-import { BookDto } from '@fe/types/book'
+import { BookDto } from '@app/types/book'
 
 const book: BookDto = {
   name: 'Harry Potter',
