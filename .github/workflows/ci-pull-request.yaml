@@ -18,7 +18,8 @@ jobs:
         cache: 'npm'
         cache-dependency-path: '**/package-lock.json'
     - run: npm ci
-    - run: npm run lint
+    - run: npm run fe:lint
+    - run: npm run fe:tsc
 
   Build:
     name: Build
@@ -31,4 +32,4 @@ jobs:
         cache: 'npm'
         cache-dependency-path: '**/package-lock.json'
     - run: npm ci
-    - run: npm run build
+    - run: npm run fe:build

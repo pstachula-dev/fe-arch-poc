@@ -11,6 +11,7 @@
     "prepare": "husky install",
     "be:dev": "npm run dev -w=@app/backend",
     "fe:dev": "npm run dev -w=@app/frontend",
+    "fe:tsc": "npm run tsc -w=@app/frontend",
     "fe:build": "npm run build -w=@app/frontend",
     "fe:lint": "npm run lint -w=@app/frontend"
   },
@@ -44,7 +45,7 @@
     "husky": "~7.0.4"
   },
   "lint-staged": {
-    "*.{ts,tsx,css}": [
+    "*.{ts,tsx}": [
       "npm run fe:lint"
     ]
   },
