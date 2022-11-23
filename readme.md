@@ -1,7 +1,9 @@
 ### Readme Frontend Architecture - proof of concept
 
 ## TODO:
-- Critical
+
+- Critical tasks:
+
   - [x] Configure eslint
   - [ ] Describe commit-msg examples
   - [ ] Describe CLI tasks
@@ -10,6 +12,7 @@
   - [ ] Fix Zustand logic
   - [ ] Add simple config IaC for https://railway.app/
   - [ ] Add SPA/Jamstack/SSR - examples and instructions
+
 - Neutral
   - [ ] Add PNPM
   - [ ] Add Turborepo
