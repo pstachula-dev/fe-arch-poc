@@ -1,12 +1,12 @@
 {
-    "name": "@app/types",
-    "private": false,
-    "version": "1.0.0",
-    "description": "types",
-    "main": "src/index.ts",
-    "main:src": "src/index.ts",
-    "scripts": {
-      "test": "pwd"
-    },
-    "license": "ISC"
-  }
+  "name": "@app/types",
+  "private": false,
+  "version": "1.0.0",
+  "description": "types",
+  "main": "src/index.ts",
+  "main:src": "src/index.ts",
+  "scripts": {
+    "test": "pwd"
+  },
+  "license": "ISC"
+}

@@ -24,7 +24,7 @@ const customJestConfig = {
     '^@utils/(.*)$': '<rootDir>/src/utils/$1',
     '^@atoms/(.*)$': '<rootDir>/src/atoms/$1',
     '^@modules/(.*)$': '<rootDir>/src/modules/$1',
-  }
+  },
 };
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
