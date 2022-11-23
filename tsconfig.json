@@ -16,12 +16,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": [
-    "**/node_modules",
-    "**/.*/",
-    "**/*.d.ts",
-    "**/dist",
-    "**/*.build",
-    "**/coverage"
-  ]
+  "include": ["**/*", ".eslintrc.js"],
+  "exclude": ["**/node_modules", "**/dist", "**/.next", "**/coverage"]
 }

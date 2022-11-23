@@ -1,5 +1,5 @@
 {
-  "extends": "../../common-configs/tsconfig.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "module": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -10,8 +10,8 @@
       "@services/*": ["src/services/*"],
       "@utils/*": ["utils/*"],
       "@modules/*": ["src/modules/*"],
-      "@atoms/*": ["atoms/*"],
+      "@atoms/*": ["atoms/*"]
     }
   },
-  "include": ["src", "**/*", ".eslintrc.js"],
+  "include": ["src", "**/*", ".eslintrc.js"]
 }

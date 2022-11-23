@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "tsc": "tsc",
-    "lint": "eslint . --ext .ts,.tsx --cache --fix",
+    "lint": "eslint . --ext .ts,.tsx --cache",
+    "lint:fix": "eslint . --ext .ts,.tsx --cache --fix",
     "test": "jest",
     "test:ci": "jest --coverage --ci --runInBand"
   },
