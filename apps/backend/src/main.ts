@@ -1,6 +1,6 @@
-import express from 'express';
-import cors from 'cors';
 import { BookDto } from '@app/types';
+import cors from 'cors';
+import express from 'express';
 
 const book: BookDto = {
   name: 'Harry Potter',
@@ -13,7 +13,6 @@ const book2: BookDto = {
 };
 
 const books = [book, book2];
-
 const app = express();
 app.use(cors());
 const port = 3030;

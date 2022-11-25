@@ -12,6 +12,8 @@ module.exports = {
   },
   ignorePatterns: ['**/node_modules'],
   extends: [
+    'airbnb',
+    'airbnb-typescript',
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:sonarjs/recommended',
@@ -24,6 +26,7 @@ module.exports = {
     'sonarjs/no-duplicate-string': 'off',
     'promise/always-return': 'off',
     'import/no-extraneous-dependencies': 'off',
+    'import/extensions': 'off',
   },
   overrides: [
     {

@@ -6,7 +6,14 @@
   "main": "src/index.ts",
   "main:src": "src/index.ts",
   "scripts": {
-    "dev": "ts-node main.ts"
+    "dev": "ts-node main.ts",
+    "build": "pwd",
+    "start": "pwd",
+    "tsc": "tsc",
+    "lint": "eslint . --ext .ts,.tsx --cache",
+    "lint:fix": "eslint . --ext .ts,.tsx --cache --fix",
+    "test": "pwd",
+    "test:ci": "pwd"
   },
   "license": "ISC",
   "dependencies": {

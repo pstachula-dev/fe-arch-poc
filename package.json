@@ -10,11 +10,17 @@
   "scripts": {
     "prepare": "husky install",
     "be:dev": "npm run dev -w=@app/backend",
+    "be:build": "npm run build -w=@app/backend",
+    "be:tsc": "npm run tsc -w=@app/backend",
+    "be:test:ci": "npm run test:ci -w=@app/backend",
+    "be:lint": "npm run lint -w=@app/backend",
+    "be:lint:fix": "npm run lint:fix -w=@app/backend",
     "fe:dev": "npm run dev -w=@app/frontend",
     "fe:tsc": "npm run tsc -w=@app/frontend",
     "fe:build": "npm run build -w=@app/frontend",
     "fe:test:ci": "npm run test:ci -w=@app/frontend",
-    "fe:lint": "npm run lint -w=@app/frontend"
+    "fe:lint": "npm run lint -w=@app/frontend",
+    "fe:lint:fix": "npm run lint:fix -w=@app/frontend"
   },
   "devDependencies": {
     "@commitlint/cli": "~16.2.3",

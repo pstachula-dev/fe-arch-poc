@@ -5,11 +5,10 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   extends: [
-    'airbnb',
-    'airbnb-typescript',
     'airbnb/hooks',
     'plugin:react-hooks/recommended',
     'plugin:react/recommended',
+    'plugin:import/recommended',
     '../../.eslintrc.js',
   ],
   rules: {
@@ -27,6 +26,23 @@ module.exports = {
     'no-param-reassign': [
       1,
       { props: true, ignorePropertyModificationsFor: ['state'] },
+    ],
+    'import/order': [
+      'error',
+      {
+        pathGroups: [
+          {
+            pattern: '@**/**',
+            group: 'internal',
+          },
+        ],
+        groups: ['builtin', 'external', 'internal'],
+        'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+      },
     ],
   },
   overrides: [
