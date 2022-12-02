@@ -5,7 +5,7 @@
 - Critical tasks:
 
   - [x] Configure eslint
-  - [ ] Add better ApiClient external/internal logic
+  - [x] Add better ApiClient external/internal logic
   - [x] Add Zustand boilerplate
   - [x] Add ReactQuery
 
