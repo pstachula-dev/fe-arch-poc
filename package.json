@@ -9,6 +9,7 @@
   },
   "scripts": {
     "prepare": "husky install",
+    "reinstall": "rimraf ./**/node_modules && rimraf ./**/.next && rimraf ./**/.dist && pnpm i",
     "be:dev": "npm run dev -w=@app/backend",
     "be:build": "npm run build -w=@app/backend",
     "be:tsc": "npm run tsc -w=@app/backend",
