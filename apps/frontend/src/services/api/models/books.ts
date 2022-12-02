@@ -1,8 +1,21 @@
 import { BookDto } from '@app/types';
 
-import { apiGet, apiPost } from '../apiClient/apiClient';
-import { routesConfig } from '../config/config';
+import { baseApiClient } from '../apiClient/baseApiClient';
+import { baseApiClientRoutes } from '../apiClient/routesMap';
+import { ApiClientResponse } from '../apiClient/services/types';
 
-export const getAllBook = apiGet<BookDto[]>(routesConfig.books);
+export const getAllBooks = async (): Promise<BookDto[]> => {
+  const { data } = await baseApiClient.get<BookDto[]>(
+    baseApiClientRoutes.books,
+  );
+  return data;
+};
 
-export const postBook = apiPost<BookDto, BookDto>(routesConfig.books);
+export const postBook = async (
+  payload: BookDto,
+): ApiClientResponse<BookDto> => {
+  return baseApiClient.post<BookDto, BookDto>(
+    baseApiClientRoutes.books,
+    payload,
+  );
+};

@@ -6,7 +6,7 @@
   "main": "src/index.ts",
   "main:src": "src/index.ts",
   "scripts": {
-    "dev": "ts-node main.ts",
+    "dev": "ts-node src/index.ts",
     "build": "pwd",
     "start": "pwd",
     "tsc": "tsc",

@@ -7,7 +7,7 @@ const createJestConfig = nextJest({
 
 // Add any custom config to be passed to Jest
 const customJestConfig = {
-  setupFilesAfterEnv: ['../../common-configs/jest-setup.js'],
+  setupFilesAfterEnv: ['./jest-setup.js'],
   moduleDirectories: ['node_modules', './src'],
   testEnvironment: 'jest-environment-jsdom',
   testTimeout: 20000,

@@ -5,13 +5,9 @@
 - Critical tasks:
 
   - [x] Configure eslint
-  - [ ] Describe commit-msg examples
-  - [ ] Describe CLI tasks
   - [ ] Add better ApiClient external/internal logic
-  - [ ] Add ReactQuery
-  - [ ] Fix Zustand logic
-  - [ ] Add simple config IaC for https://railway.app/
-  - [ ] Add SPA/Jamstack/SSR - examples and instructions
+  - [x] Add Zustand boilerplate
+  - [x] Add ReactQuery
 
 - Neutral
   - [ ] Add PNPM

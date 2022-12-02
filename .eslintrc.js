@@ -22,9 +22,8 @@ module.exports = {
   ],
   rules: {
     'prettier/prettier': 'warn',
-    'import/prefer-default-export': 'off',
-    'sonarjs/no-duplicate-string': 'off',
     'promise/always-return': 'off',
+    'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/extensions': 'off',
   },
@@ -32,7 +31,6 @@ module.exports = {
     {
       files: ['*.ts', '*.tsx'],
       extends: [
-        'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
@@ -46,6 +44,7 @@ module.exports = {
         ],
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/explicit-function-return-type': 'error',
+        '@typescript-eslint/no-floating-promises': 'off',
       },
     },
   ],

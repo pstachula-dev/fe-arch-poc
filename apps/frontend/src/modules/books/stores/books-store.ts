@@ -1,21 +1,23 @@
 import create from 'zustand';
 
-import { BookEntity } from '../../../services/types/books.types';
-
-interface BooksState {
-  book?: BookEntity;
-  books?: BookEntity[];
-  setBooks: (books?: BookEntity[]) => void;
-  postBook: (book?: BookEntity) => void;
+export interface BookConfig {
+  libraryName: string;
 }
 
-export const useBookStore = create<BooksState>((set) => ({
-  book: undefined,
-  books: undefined,
-  setBooks: (books?: BookEntity[]): void => {
-    set({ books });
-  },
-  postBook: (book?: BookEntity): void => {
-    set({ book });
+interface BooksState {
+  bookConfig?: BookConfig;
+}
+
+export const useBookStore = create<BooksState>(() => ({
+  bookConfig: {
+    libraryName: 'Test Library',
   },
 }));
+
+export const setBooksConfig = (bookConfig: BookConfig): void => {
+  useBookStore.setState({ bookConfig });
+};
+
+export const useGetBooksConfig = (): BookConfig | undefined => {
+  return useBookStore(({ bookConfig }) => bookConfig);
+};

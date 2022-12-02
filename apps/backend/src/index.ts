@@ -26,9 +26,11 @@ app.get('/books', (req, res) => {
 });
 
 app.post('/books', (req, res) => {
+  books.push(book2);
   res.json(books);
 });
 
 app.listen(port, () => {
+  // eslint-disable-next-line no-console
   console.log(`Example app listening on port ${port}`);
 });
