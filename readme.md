@@ -11,8 +11,8 @@
 
 - Neutral
   - [x] Add PNPM
-  - [ ] Add Turborepo
-  - [ ] Add example tests
-  - [ ] Add additional config Eslint config for JSON
+  - [x] Add Turborepo
+  - [x] Add example tests
   - [ ] Add a few abstraction modules for dates and translations
   - [ ] Add Docker image configs
+  - [ ] Add Railway config

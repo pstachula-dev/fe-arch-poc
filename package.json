@@ -5,7 +5,8 @@
     "apps/*"
   ],
   "engines": {
-    "node": ">=16"
+    "node": ">=16",
+    "pnpm": ">=7"
   },
   "scripts": {
     "prepare": "husky install",
