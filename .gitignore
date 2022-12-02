@@ -26,6 +26,7 @@ coverage/
 .next
 .env
 .env.local
+.turbo
 
 # Cache
 .eslintcache

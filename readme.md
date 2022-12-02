@@ -10,7 +10,7 @@
   - [x] Add ReactQuery
 
 - Neutral
-  - [ ] Add PNPM
+  - [x] Add PNPM
   - [ ] Add Turborepo
   - [ ] Add example tests
   - [ ] Add additional config Eslint config for JSON

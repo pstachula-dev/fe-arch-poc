@@ -24,6 +24,7 @@
     "fe:lint:fix": "npm run lint:fix -w=@app/frontend"
   },
   "devDependencies": {
+    "@babel/runtime": "~7.17.9",
     "@commitlint/cli": "~16.2.3",
     "@types/jest": "~27.4.1",
     "@types/node": "~17.0.45",
@@ -47,7 +48,7 @@
     "jest-fail-on-console": "~2.3.0",
     "lint-staged": "~12.3.7",
     "prettier": "~2.3.2",
-    "@babel/runtime": "~7.17.9",
+    "turbo": "^1.6.3",
     "typescript": "~4.9.3"
   },
   "dependencies": {
